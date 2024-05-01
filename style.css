@@ -1,0 +1,1263 @@
+@font-face {
+    font-family: Archia;
+    src: url(./archia-light-webfont.woff);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* cursor: none; */
+    font-family: Archia;
+
+}
+
+/* ------------------ Page-1 --------------------- */
+.Page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white ;
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: fixed;
+    z-index: 9;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 8rem;
+    width: 100%;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    font-size: 0.83rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    /* mix-blend-mode: difference; */
+}
+
+nav i{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: white;
+    display: none;
+}
+
+.Page1 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+}
+
+/* ------------------------ Page-2 -------------------------- */
+
+.Page2{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.Page2>h1{
+    width: 100%;
+    text-align: center;
+    padding: 7vw 8vw;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.3vw;
+    word-spacing: 0.7vw;
+}
+
+.page2-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+    padding: 0vw 7vw;
+    
+}
+
+.left-page2{
+    height: 24vw;
+    width: 43%;
+    background-color: rgba(237, 237, 237, 0.45);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blur{
+    height: 100%;
+    width: 50%;
+    /* border-radius: 20px; */
+    background: rgba(255, 255, 255, 0.312);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 9;
+}
+
+.left-page2>img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+}
+
+.right-page2{
+    height: 24vw;
+    width: 48%;
+    /* background: wheat; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.right-page2 > h1{
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 3vw;
+}
+
+.right-page2 > p{
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin-bottom: 3vw;
+
+}
+
+.right-page2 button{
+    padding: 1vw 2vw;
+    border: 2px solid black;
+    border-radius: 2vw;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+
+/* ---------------- Page-3 --------------------- */
+.Page3{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+}
+
+.Page3>h1{
+    width: 100%;
+    text-align: center;
+    padding: 7vw 8vw;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.3vw;
+    word-spacing: 0.7vw;
+}
+
+.page3-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+    padding: 0vw 7vw;
+    
+}
+
+.right-page3{
+    height: 24vw;
+    width: 43%;
+    /* background-color: rgb(152, 65, 65);  */
+    border-radius: 20px;
+    position: relative;
+    /* z-index: 2; */
+    overflow: hidden;
+}
+
+.right-page3 video{
+    object-fit: cover;
+    border-radius: 3rem;
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    
+}
+
+.left-page3{
+    height: 24vw;
+    width: 48%;
+}
+
+.left-page3 > h1{
+    font-size: 3vw;
+    font-weight: 400;
+    margin-bottom: 3vw;
+}
+
+.left-page3 > p{
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin-bottom: 3vw;
+
+}
+
+.left-page3 button{
+    padding: 1vw 2vw;
+    border: 2px solid black;
+    border-radius: 2vw;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/* ------------------ Page-4 --------------- */
+
+.Page4{
+    width: 100%;
+    min-height: 100vh;
+    background: url(./assets/download.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    /* padding-bottom: 30px; */
+}
+
+.page4-top{
+    width: 100%;
+    height: 100px;
+}
+
+.Page4 h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    /* z-index: 1; */
+    padding-top: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.5vw;
+    position: absolute;
+    top: 0;
+    /* background: red; */
+}
+
+.helmet{
+    width: 100%;
+    /* height: 100%; */
+    /* text-align: center;
+    object-fit: cover;
+    object-position: center; */
+    /* position: absolute;
+    transform: translate(-10%) scale(0.7); */
+}
+
+/* ----------------- Page4-content1----------- */
+
+.page4-content1{
+    width: 100%;
+    /* min-height: 100%; */
+    /* background: red; */
+    /* margin-bottom: 5rem; */
+    /* padding: 5vw 0; */
+    text-align: center;
+}
+
+.page4-content1 h2{
+    font-size: 3.3vw;
+    font-weight: 100;
+}
+
+.page4-content1 p{
+    font-size: 1.4vw;
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1.8vw 0;
+}
+
+.page4-content1 button{
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0.8vw 2vw;
+    font-size: 1.1vw;
+    font-weight: 100;
+}
+
+/* ----------------- Page4-content2 ----------- */
+
+
+.page4-content2{
+    height: 33vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 6vw;
+    /* margin: 8rem 0; */
+    /* background: rebeccapurple ; */
+}
+
+.page4-content2 video{
+    width: 40%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page4-content2 h2{
+    width: 50%;
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin-bottom: 9vw;
+    /* background: red; */
+}
+
+/* ----------------- Page4-content3 ----------- */
+
+
+.page4-content3{
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 8vw;
+}
+
+.page4-content3 video{
+    width: 40%;
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page4-content3 .right {
+    width: 50%;
+    margin-bottom: 3vw;
+    /* background: red; */
+}
+
+.page4-content3 h2{
+    font-size: 1.8vw;
+    font-weight: 500;
+    /* margin-bottom: 10rem; */
+    
+}
+
+.page4-content3 button{
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0.9vw 2vw;
+    font-size: 1.2vw;
+    font-weight: 100;
+    /* margin-bottom: 10rem; */
+    margin-top: 3rem;
+}
+
+/* ----------------- Page4-content4 ----------- */
+
+
+.page4-content4 {
+    height: 33vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 6vw;
+    /* margin: 8rem 0; */
+    /* background: rebeccapurple ; */
+}
+
+.page4-content4 video{
+    width: 40%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page4-content4 h2{
+    width: 50%;
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin-bottom: 9vw;
+    /* background: red; */
+}
+
+/* ----------------- Page4-content5 ----------- */
+
+
+.page4-content5{
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 8vw;
+}
+
+.page4-content5 video{
+    width: 40%;
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.page4-content5 .right {
+    width: 50%;
+    /* margin-bottom: 3vw; */
+    /* background: red; */
+}
+
+.page4-content5 h2{
+    font-size: 1.8vw;
+    font-weight: 500;
+    /* margin-bottom: 10rem; */
+    
+}
+
+.page4-content5 button{
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0.9vw 2vw;
+    font-size: 1.2vw;
+    font-weight: 100;
+    /* margin-bottom: 10rem; */
+    margin-top: 3rem;
+}
+
+/* ---------------- Page-5----------------- */
+.Page5{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+}
+
+.Page5 h3{
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    letter-spacing: 0.4vw;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2vw;
+    /* background: rebeccapurple; */
+}
+
+.page5-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    padding: 4vw 2vw;
+    flex-wrap: nowrap;
+    gap: 3vw;
+    /* background: red; */
+}
+
+.page5-content1{
+    width: 30vw;
+    flex-shrink: 0;
+    /* background: red; */
+    padding: 5vw 2vw;
+}
+
+.page5-content1 h1{
+    font-size: 3vw;
+    color: white;
+    font-weight: 100;
+    /* margin-bottom: 100px; */
+}
+
+.page5-content1 p{
+    font-size: 1.3vw;
+    color: white;
+}
+
+.page5-content1 button{
+    font-size: 1vw;
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-weight: 600;
+    color: white;
+}
+
+.page5-elems{
+    flex-shrink: 0;
+    width: 40vw;
+    height: 95%;
+    background-color: #ffffff5e;
+    border-radius: 20px;
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg.svg);
+    -webkit-mask-size: cover;
+    backdrop-filter: blur(10px);
+    padding: 2vw 2vw;
+}
+
+.page5-elems img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    
+    margin-bottom: 1vw;
+    /* padding: 2vw; */
+    border-radius: 50px;
+    /* background: rebeccapurple; */
+}
+
+.page5-elems h1{
+    /* text-align: center; */
+    font-size: 3vw;
+    font-weight: 100;
+    margin-top: 2vw;
+}
+
+.page5-elems p {
+    font-size: 1vw;
+    margin-top: 2vw;
+}
+
+.num{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    z-index: 99;
+    bottom: 13%;
+    /* background: red; */
+}
+
+.num1{
+    left: 36%;
+}
+.num2{
+    left: 79%;
+}
+.num3{
+    left: 122%;
+}
+
+
+.slider{
+    height: 4px;
+    width: 59%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 1.5%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+
+.slider-in{
+    height: 100%;
+    width: 17vw;
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* ---------------- Page - 6 ---------------- */
+/* .Page6{
+    width: 100%;
+    height: 100vh;
+    background: conic-gradient( at 50% -10%, #F1F2FF 26.2499991059deg, #d0b7ff 101.25deg, #fae0ca 243.7499928474deg, #fab4af 326.25deg);
+    padding: 6vw 8vw;
+}
+
+.Page6 h2{
+    font-size: 3.8vw;
+    font-weight: 100;
+}
+
+.page6-content1{
+    display: flex;
+}
+
+.page6-content1 p{
+    font-size: 1.8vw;
+}
+
+.page6-content1-right p{
+    font-size: 1.3vw;
+} */
+
+
+
+
+.Page6{
+    width: 100%;
+    min-height: 100vh;
+    background: conic-gradient( at 50% -10%, #F1F2FF 26.2499991059deg, #d0b7ff 101.25deg, #fae0ca 243.7499928474deg, #fab4af 326.25deg);
+    padding: 8vw 7vw 0 7vw ;
+}
+
+.Page6 h2{
+    font-size: 3.5vw;
+}
+
+.page6-content1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7vh;
+    padding-bottom: 18vh;
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 1px solid black;
+}
+
+.page6-content1>p{
+    width: 45vw;
+    /* background-color: red; */
+    font-size: 1.8vw;
+    line-height: 2.2vw;
+}
+
+.page6-content1-right{
+    width: 36vw;
+}
+
+.page6-content1-right p{
+    font-size: 1.5vw;
+}
+
+.page6-content1-right ul{
+    margin-top: 8vh;
+    margin-left: 5vh;
+}
+
+.page6-content1-right ul li{
+    font-size: 1.4vw;
+    font-weight: 900;
+    margin-top: 2vh;
+}
+
+
+/* page6 content 2 */
+.Page6 h3{
+    text-align: left;
+    margin-top: 10vh;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    font-size: 1.6vw;
+    font-weight: 900;
+    font-family: Archia;
+}
+
+.page6-content2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.page6-content2-card{
+    width: 28vw;
+    height: 80vh;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.number{
+    position: absolute;
+    font-size: 2.5vw;
+    top: 3vh;
+    right: 1vw;
+    font-weight: 900;
+}
+
+.page6-content2 button{
+    max-width: 18vw;
+    margin: 10vh 4vw 0 4vw;
+    font-size: 2vw;
+    /* font-family: Aregular; */
+    text-align: start;
+    padding: 2vw;
+    border: none;
+}
+
+.page6_btn1{
+    font-family: Archia;
+    background-color: #E0DEFE;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.page6_btn2{
+    background-color: #C9E3F8;
+    border-radius: 50px;
+    font-family: Archia;
+    font-weight: 700;
+}
+
+.page6_btn3{
+    background-color: #FED7CD;
+    border-radius: 50px;
+    font-family: Archia;
+    font-weight: 700;
+}
+
+.page6-content2 p{
+    margin: 5vh 4vw;
+    font-size: 1.2vw;
+    /* font-family: Aregular; */
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #7f7f7f;
+}
+
+.Page6 > p{
+    text-align: center;
+    font-family: Archia;
+    font-size: 1.5vw;
+    width: 50vw;
+    margin: -10vh auto;
+    /* background: red; */
+}
+
+.Page6>button{
+    margin: 20vh 0 10vh 0;
+    padding: 1vw 2vw;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.page6_img{
+    margin:0 25vw -.6vh 23vw;    
+    width: 40vw;
+}
+
+/* ------------ Page-7 -------------- */
+#page7{
+    width: 100%;
+    min-height: 100vh;
+    padding:0 7vw ;
+    background: white;
+}
+
+#page7 h3{
+    margin-top: 15vh;
+    text-align: center;
+    /* background: red; */
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.page7-content1{
+    width: 86vw;
+    height: 35vh;
+    display: flex;
+    margin-top: 16vh;  
+}
+
+.page7-content1-left{
+    width: 50%;
+    height: 100%; 
+    padding-right: 5vw;
+}
+
+.page7-content1-left h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page7-content1-left p{
+    font-size: 1.4vw;
+    margin-top: 5vh;
+    font-weight: 100;
+}
+
+.page7-content1-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://www.brain.space/wp-content/uploads/2023/07/DASHBOARD.jpg);
+    border-radius: 20px;
+}
+
+.page7_bot1,.page7_bot2{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 15vh;
+}
+
+.page7_bot_info{
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page7_bot_info img{
+    height: 60px;
+}
+
+.page7_bot_info p{
+    font-size: .8vw;
+    font-weight: 500;
+    /* font-family: Alight; */
+    line-height: 1.2vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+
+#page7>button{
+    margin: 15vh 0 10vh 0;
+    padding: 1vw 2vw;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+
+/*-------------- Page8 --------------*/
+#page8{
+    width: 94%;
+    margin: auto;
+    min-height: 100vh;
+    border-top-left-radius: 100px;
+    padding-bottom: 50vh;
+    position: relative;
+    background:conic-gradient(at 0 0 , #FFC3BE 0deg, #CED2FB 39.19deg, #C5E3FF 95.62deg, #BEEFF8 150.61deg, #B7F9F0 208.13deg, #F7FFC7 253.13deg, #FFE7D2 300deg, #FFD6CE 328.25deg, #FFC3BE 360deg), conic-gradient(from 176.66deg at 46.1% 33.87%, #E7E2F0 0deg, #95BFE8 39.19deg, #A3DEFF 104.7deg, #77A8F4 150.61deg, #6C89F0 210.89deg, #DAD4D4 272.3deg, #FFBBB4 314.64deg, #EFD4DB 328.25deg, #E7E2F0 360deg);
+}
+
+.page8_header_bg{
+    width: 16vw;
+    height: 16vw;
+    /* background-color: red; */
+    background-image: url(	https://www.brain.space/wp-content/themes/brain.space/assets/substracts/shape_corner_substract.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page8_circle{
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+    background-color: #000;
+    background-position: center;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/imgs/side-shape-icons/hp_intro_side_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page8_header h3{
+    margin-top: -20vh;
+    /* background: red; */
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.page8_top{
+    width: 100%;
+    height: 40vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+    
+}
+
+.page8_top h2{
+    width: 35vw;
+    font-size: 3vw;
+    font-weight: 200;
+    /* background-color: yellow; */
+}
+
+.page8_top_right{
+    width: 40vw;
+}
+
+.page8_top_right h3{
+    margin-top: 0;
+    text-align: start;
+    letter-spacing: 0px;
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.page8_top_right p{
+    margin-top: 5vh;
+    font-size: 1.3vw;
+}
+
+.page8_center{
+    width:85vw;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.36);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    padding: 1px 0 10vh 0;
+    border-radius: 50px;
+}
+
+.page8_center p{
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.icons_contain{
+    width: 70vw;
+    display: flex;
+    /* align-items: center; */
+    margin: auto;
+    /* margin-top: 15vh; */
+    /* background-color: red; */
+}
+
+.icons_in{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    padding-left:5vw;
+    position: relative;
+}
+
+.icons_in::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.24);
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+}
+
+.last::after{
+    content:"";
+    height: 0;
+}
+
+.circle {
+    width: 8vh;
+    height: 8vh;
+    /* height: 0; */
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+    position: relative;
+   border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icons_in h4{
+    margin-left: 3vw;
+    font-weight: 200;
+  }
+
+  .page8_bot{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 20vh;
+    display: flex;
+    padding:0 4.5vw;
+    justify-content: space-between;
+}
+
+.page8_bot_left{
+    width: 35vw;
+    height: 100%;
+    /* background-color: red; */
+}
+.page8_bot p{
+    margin: 5vh 0;
+}
+
+.page8_bot h4{
+    padding: 3vh 0;
+    border-top: .5px solid rgb(34, 34, 34);
+    font-weight: 500;
+    font-size: .8vw;
+}
+
+.page8_bot_right{
+    width: 40vw;
+    height: 100%;
+    background-image: url('https://www.brain.space/wp-content/uploads/2023/07/peripheral-sensors.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Page-9 */
+#page9{
+    width:96%;
+    height: 125vh;
+    margin: auto;
+    background: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission_bg.jpg) no-repeat center;
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission-box_bg.jpg.svg);
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    margin-top: -25vh;
+    position: relative;
+    padding: 1px 4.5vw;
+}
+
+#page9 h3{
+     /* background: red; */
+    margin-top: 14vw;
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.page9_imgs{
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+}
+
+.page9_imgs img{
+    height: 11.3vh;
+}
+
+
+
+.page9_cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.page9_left{
+    width: 35vw;
+}
+
+.page9_left h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page9_left p{
+    font-family: Archia;
+    margin: 7vh 0;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.page9_left h5{
+    font-size: 1.7vw;
+    font-family: Plight;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.page9_right{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 200px;
+}
+
+.page9_right video{
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page10{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#page10 h3{
+    margin-bottom: 15vh;
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.page10_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 4vw;
+}
+
+#page10 p{
+    text-align: center;
+    margin:15vh auto 0 auto;
+    width: 40vw;
+    font-size: 1.5vw;
+    font-family: Alight;
+}
+
+#page10 button{
+    margin: 5vh 0 0 5vw;
+    padding: 1vw 2vw;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+#page11{
+    width: 100%;
+    min-height: 150vh;
+    background: conic-gradient(from 160.47deg at 31.82% 74.94%, #F5F9FA 0deg, #F9A29E 251.93deg, #7D97FC 292.77deg, #FFFFFF 360deg);
+    position: relative;
+}
+
+.page11_in{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.128);
+    backdrop-filter: blur(70px);
+    color: #fff;
+    padding: 30vh 20vw 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page11_left{
+    width: 35vw;
+}
+
+.page11_left h2{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.page11_left p{
+    margin-top: 3vh;
+    font-size: 1.4vw;
+}
+
+.page11_right{
+    width: 23vw;
+}
+.page11_right input{
+    border: none;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 100;
+    font-family: Archia;
+    color: black;
+    padding: 1.2vw;
+    margin-top: 3vh;
+    border-radius: 20px;
+    background-color: #F0D9E2;
+}
+
+.page11_right button{
+    margin: 7vh 0 3vh 0;
+    padding: 1vw 1.5vw;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 1.2vw;
+}
+
+.page11_right h6{
+    color: #000;
+    font-weight: 100;
+    font-size: .9vw;
+}
+
+.page11_right h6 span{
+    text-decoration: underline;
+}
+
+.page11_img{
+    width: 50vw;
+    height: 40vh;
+    background-image:url('https://www.brain.space/wp-content/themes/brain.space/assets/substracts/footer_substract.svg') ;
+    background-size: cover;
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: black;
+}
+
+.page11_img p{
+    margin: 25vh 5vw;
+    font-family: Alight;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 0 5vw;
+}
+
+.footer_cont{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.footer_right{
+    display: flex;
+    gap: 2vw;
+}
+
+.footer_right h4{
+    font-size: .7vw;
+}
+
+.footer_right i{
+    font-size: 1.5vw;
+}
